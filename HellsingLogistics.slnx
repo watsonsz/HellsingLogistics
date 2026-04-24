@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="HellsingLogistics.Api/HellsingLogistics.Api.csproj" />
+  <Project Path="HellsingLogistics.Application/HellsingLogistics.Application.csproj" />
+  <Project Path="HellsingLogistics.Domain/HellsingLogistics.Domain.csproj" />
+  <Project Path="HellsingLogistics.Infrastructure/HellsingLogistics.Infrastructure.csproj" />
+  <Project Path="HellsingLogistics.Persistance/HellsingLogistics.Persistance.csproj" />
+</Solution>
