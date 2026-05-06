@@ -1,9 +1,15 @@
+using HellsingLogistics.Domain.Common;
+
 namespace HellsingLogistics.Domain.ProductionWorkOrders;
 
-public class ProductionWorkOrder
-{
-    public int Id { get; set; }
-    public string WorkOrderNumber { get; set; } = string.Empty;
+public class ProductionWorkOrder: BaseEntity
+{   
+    public ProductionWorkOrder()
+    {
+        WorkOrderNumber = $"PROD-{DateTime.Now.ToString("yyyyMMddHHmmss")}";
+    }
+
+    public string WorkOrderNumber { get; set; }
 
     public int ProductionRequestId { get; set; }
     public ProductionRequest ProductionRequest { get; set; } = null!;
@@ -12,9 +18,7 @@ public class ProductionWorkOrder
     public PriorityLevel Priority { get; set; } = PriorityLevel.Normal;
 
     public int? AssignedToUserId { get; set; }
-    public AppUser? AssignedToUser { get; set; }
 
-    public DateTime CreatedAtUtc { get; set; } = DateTime.UtcNow;
     public DateTime? StartedAtUtc { get; set; }
     public DateTime? CompletedAtUtc { get; set; }
 

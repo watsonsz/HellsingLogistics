@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace HellsingLogistics.Domain.MiningWorkOrders;
 
 public class MiningWorkOrder
@@ -20,5 +22,6 @@ public class MiningWorkOrder
     public string? Notes { get; set; }
 
     public ICollection<MiningWorkOrderMaterial> MaterialsNeeded { get; set; } = new List<MiningWorkOrderMaterial>();
-    public ICollection<WorkOrderStatusHistory> StatusHistory { get; set; } = new List<WorkOrderStatusHistory>();
 }
+
+

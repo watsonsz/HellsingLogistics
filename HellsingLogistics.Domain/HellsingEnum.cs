@@ -66,3 +66,30 @@ public enum QualityBand
     Premium = 4,
     Exceptional = 5
 }
+public enum BlueprintCategory
+{
+    Armor,
+    Weapon
+}
+
+public enum MaterialName
+{
+    Aluminum,
+    Hadanite
+}
+public enum PriorityLevel
+{
+    Low,
+    Normal,
+    Critical
+}
+public enum RequestType
+{
+    INTERNAL,
+    EXTERNAL
+}
+public enum RequestStatus
+{
+    Draft,
+    
+}
